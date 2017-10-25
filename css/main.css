@@ -1,3 +1,181 @@
 /*
  * Estilos de tu proyecto
  */
+
+body {
+    background-color: rgb(221, 191, 233)
+}
+
+li img {
+    width: 4rem;
+    height: 2.83871rem;
+}
+
+.video11 {
+    /*     background-size:cover;
+    background-position:50%;
+    position:absolute;
+    -webkit-box-flex:1;
+    flex:1;
+    min-height:0;
+    max-height:70vh;
+    -webkit-transform:none;
+    transform:none; */
+    /*    min-height:100%;
+    min-width:100%; */
+    /*     height:1280px;
+    width:720px; */
+    /* display:none;
+    max-width:100%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%); */
+}
+
+.encabezado {
+    position: absolute;
+    /*background-color: #551C6B;*/
+    padding-bottom: 5%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logowhite img {
+    position: relative;
+    height: 50px;
+    width: 65px;
+    z-index: 100;
+    margin: 0;
+    top: 100px;
+    left: 80px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    /*color:white;*/
+}
+
+section .cajaBlanca {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    bottom: 60em;
+    left: 48.81em;
+}
+
+section .TituloCajaBlanca {
+    position: relative;
+    /*border: 1px blue solid;*/
+    bottom: 105em;
+    color: blue;
+    left: 53em;
+}
+
+.ti {
+    display: block
+}
+
+.textos {
+    display: inline-block;
+}
+
+.imagenTexto {
+    display: inline-block;
+}
+
+.imagen_celular img {
+    width: 500px;
+    height: 500px;
+}
+
+.contenedor_texto_celular{
+    border: 1px blue solid;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+}
+
+.texto_celular{
+    width: 500px;
+    height: 500px;
+    float: left;
+    text-align: justify;
+}
+
+.text_learn{
+    width: 350px;
+    height: 500px;
+    float: left;
+}
+
+.learn{
+    border:1px blue solid;
+    background-color: white;
+}
+
+.imagen_learn img{
+    width:800px;
+    height: 500px;
+}
+
+
+
+.oregon_west{
+    border:1px red solid;    
+    background-color: white;
+}
+
+.west{
+    width:300px;
+    height: 300px;
+    float: right;
+}
+
+.video_oregon{
+    display: inline;
+}
+
+.corazon{
+    float: right;
+}
+
+.round{
+    width:300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.round_corazon{
+    background-color: white;
+}
+
+.product, .news{
+    width:300px;
+    height: 300px;
+}
+
+.product_news{
+    border:1px red solid;    
+    background-color: white;
+    
+}
+
+.news{
+    float: left;
+}
+
+.product{
+    display: inline-block;
+}
+
+.find_lyft{
+    background-color: #470086;
+}
