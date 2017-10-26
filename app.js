@@ -1,5 +1,7 @@
+/*Funcion para cambiar el icono <logo> cuando el cursor pasa por menu */
 function change() {
     document.getElementById("logo").src = "assets/images/logo-pink.png";
+    /*Para cambiar el color de fondo a blanco cuando el curso*/
     document.getElementById("menu").style.backgroundColor = "white";
 
     var links = document.getElementsByTagName("a");
@@ -15,6 +17,7 @@ function change() {
     document.getElementById("login").style.borderColor = "black";
 }
 
+/*Funcion para volver al icono <logo> inicial*/
 function changeBack() {
     document.getElementById("logo").src = "assets/images/logo-white.png";
     document.getElementById("menu").style.backgroundColor = "transparent";
