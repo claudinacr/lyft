@@ -7,78 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A ride whenever you need one - Lyft</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
 
     <header>
         <!-- Menu -->
-        <nav>
-            <ul>
+        <nav class="menu1" id="menu">
+            <ul class="lista1">
                 <li>
-                    <img src="assets/images/logo-white.png" alt="">
+                    <a href="#">
+                        <img id="logo" src="assets/images/logo-white.png" width="70px" height="50px">
+                    </a>
                 </li>
                 <li>
-                    <div>
+                    <a href="#">Drive</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="change()" onmouseout="changeBack()" id="amenu1">Explore</a>
+                    <div class="menu2">
                         <ul>
                             <li>
-                                <a href="#">Drive</a>
+                                <a href="#">Partnerships</a>
                             </li>
                             <li>
-                                <a href="#">Explore</a>
+                                <a href="#">Business</a>
                             </li>
                             <li>
-                                <a href="#">Help</a>
+                                <a href="#">Cities</a>
                             </li>
                             <li>
-                                <a href="#">Log In</a>
+                                <a href="#">Airports</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li></li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="login">Log in</span>
+                    </a>
+                </li>
             </ul>
+
+
         </nav>
+
     </header>
 
-    <section>
+    <section class="video">
         <!-- Video -->
         <div class="video1">
             <video class="video11
             " poster="assets/images/homepage-hero-poster.8ec795d5.jpg" autoplay="" loop="" muted="" data-reactid="74" playsinline=""
-                width="1280" height="720">
+                width="100%" height="100%">
                 <source src="assets/images/hero-video-opt.mp4" type="video/mp4" data-reactid="75">
             </video>
+ <!--            <div class="turnmiles">
+                <div class="cajaBlanca">
+                        <div class="TituloCajaBlanca">
+                                <h2>Turn Miles Into Money</h2>
+                        </div>
+                </div>
 
+
+            </div> -->
         </div>
-    </section>
-
-    <section>
         <!-- Caja Blanca -->
-        <div class="cajaBlanca">
-
-        </div>
-
-        <div class="TituloCajaBlanca">
-            <h2>Turn Miles Into Money</h2>
-        </div>
 
     </section>
 
 
-    <section>
+    <section class="celular">
         <!-- Celular Texto -->
         <div class="contenedor_texto_celular">
             <div class="texto_celular">
+
                 <ul>
-                    <li>A RIDE IN MINUTES</li>
+                    <li><h2>A RIDE IN MINUTES</h2></li>
                     <li>Request a ride and you’ll be on your way in minutes. Request. Ride. Repeat.</li>
-                    <li>SERIOUS ABOUT SAFETY</li>
+                    <br>
+                    <li><h2>SERIOUS ABOUT SAFETY</h2></li>
                     <li>From knowing the color of your driver’s car to our 24/7 Trust & Safety Team, we got you.</li>
-                    <li>HAPPY DRIVERS.</li>
-                    <li>HAPPY RIDERS.</li>
+                    <br>
+                    <li><h2>HAPPY DRIVERS.</h2></li>
+                    <li><h2>HAPPY RIDERS.</h2></li>
                     <li>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</li>
                 </ul>
             </div>
@@ -90,12 +109,11 @@
 
     <section>
         <div class="learn">
-
             <div class="text_learn">
                 <ul>
-                    <li>LEARN MORE</li>
-                    <li>DRIVEN BY YOU FROM DAY ONE</li>
-                    <li>You work hard to get where you’re going. We’re here to help you get there.</li>
+                    <li><h2>LEARN MORE</h2></li>
+                    <li><h2>DRIVEN BY YOU FROM DAY ONE</h2></li>
+                    <li> You work hard to get where you’re going. We’re here to help you get there.</li>
                 </ul>
             </div>
             <div class="imagen_learn">

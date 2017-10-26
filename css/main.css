@@ -1,14 +1,108 @@
 /*
  * Estilos de tu proyecto
  */
-
+ *{
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: rgb(221, 191, 233)
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #29073B; */
 }
 
-li img {
-    width: 4rem;
-    height: 2.83871rem;
+a {
+    text-decoration: none;
+
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    width: 100%;
+}
+.menu1{
+    /* border: 1px blue solid; */
+    overflow:hidden ;
+    width: 100%;
+    padding-left: 5em;
+}
+
+.menu1 a {
+    color: white;
+}
+
+a:hover, .menu2 a:hover{
+    color: #FF00BF;
+}
+
+li {
+    display: inline-block;
+}
+
+.menu1 .lista1>li {
+    list-style: none;
+    float: left;
+    padding: 2em;
+    /*border: 1px blue solid;*/
+}
+
+.menu1 .lista1>li:nth-child(3):hover .menu2 {
+    visibility: visible;
+    /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+
+.menu1 .lista1>li:nth-child(2) {
+    margin-left: 35em;
+}
+
+
+.lista1 li:last-child span{
+    border: 1px white solid;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.menu2 {
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    margin-top: 4.3em;
+    border-top: 2px gainsboro solid; 
+    width: 100%;
+    height: 5em;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.menu2 ul {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    align-content: center;
+    
+}
+
+.menu2 li {
+    padding: 2em;
+}
+.menu2 a{
+    color: black;
+}
+
+.video{
+    width: 100%;
+    z-index: -1;
+
 }
 
 .video11 {
@@ -32,44 +126,13 @@ li img {
     transform:translateY(-50%); */
 }
 
-.encabezado {
-    position: absolute;
-    /*background-color: #551C6B;*/
-    padding-bottom: 5%;
-    margin: 0px;
-    padding: 0px;
-}
-
-.logowhite img {
-    position: relative;
-    height: 50px;
-    width: 65px;
+.turnmiles {
+    display:block;
     z-index: 100;
-    margin: 0;
-    top: 100px;
-    left: 80px;
+
 }
 
-li {
-    list-style: none;
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
-    /*color:white;*/
-}
-
-section .cajaBlanca {
-    position: relative;
-    width: 500px;
-    height: 450px;
-    background-color: white;
-    bottom: 60em;
-    left: 48.81em;
-}
-
-section .TituloCajaBlanca {
+.TituloCajaBlanca {
     position: relative;
     /*border: 1px blue solid;*/
     bottom: 105em;
@@ -77,12 +140,10 @@ section .TituloCajaBlanca {
     left: 53em;
 }
 
-.ti {
-    display: block
-}
-
-.textos {
-    display: inline-block;
+.celular{
+    background: linear-gradient(#76278F, #2B1E66);
+    display: block;
+    margin-top: -5px;
 }
 
 .imagenTexto {
@@ -95,7 +156,6 @@ section .TituloCajaBlanca {
 }
 
 .contenedor_texto_celular{
-    border: 1px blue solid;
     text-align: center;
 }
 
@@ -108,28 +168,38 @@ section .TituloCajaBlanca {
     height: 500px;
     float: left;
     text-align: justify;
+    color: white;
 }
-
-.text_learn{
-    width: 350px;
-    height: 500px;
-    float: left;
+.texto_celular ul{
+    padding-left: 10em;
+    padding-top: 6em;
 }
 
 .learn{
-    border:1px blue solid;
     background-color: white;
+    width: 100%;
+   
 }
 
-.imagen_learn img{
-    width:800px;
-    height: 500px;
+.text_learn{
+    width: 50%;
+    float: left;
+    text-align: center;
+    
 }
 
+.text_learn ul{
+
+    padding: 6em 15em;
+}
+.imagen_learn{
+    width: 50%;
+    display: inline-block;
+}
 
 
 .oregon_west{
-    border:1px red solid;    
+  margin-top: -1px;
     background-color: white;
 }
 
@@ -137,6 +207,10 @@ section .TituloCajaBlanca {
     width:300px;
     height: 300px;
     float: right;
+    text-align: center;
+}
+.west ul{
+    padding: 2em 10em;
 }
 
 .video_oregon{
