@@ -16,13 +16,14 @@ a {
     text-decoration: none;
 }
 
+/*Menú de Navegación en la parte superior*/
 header {
     position: fixed;
     z-index: 100;
     width: 100%;
 }
 
-.menu1 {
+.menu1 { /*Menú de Navegación con logo/
     /* border: 1px blue solid; */
     overflow: hidden;
     padding-left: 5em;
@@ -72,7 +73,7 @@ li {
     padding: 15px;
 }
 
-.menu2 {
+.menu2 { /*Menú de navegacion oculto que aparece con hover*/
     visibility: hidden;
     background-color: white;
     position: absolute;
@@ -81,9 +82,11 @@ li {
     height: 5em;
     left: 0;
     opacity: 0;
-    transform: translateY(-2em);
+    transform: translateY(-2em); /*aqui se establece el movi hacia abajo del menu*/
     z-index: -1;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transition: all 0.3s ease-in-out; 
+    /*aqui se establece que todas las transiciones
+    tengan una duracion de 0.3s con una funcion ease-in-out*/
 }
 
 .menu2 ul {
@@ -105,97 +108,78 @@ li {
 /* Cover Section */
 
 .cover {
-    box-sizing: inherit;
     display: block;
 }
 
 .form_and_video {
-    box-sizing: inherit;
     display: block;
     position: relative;
     background-position: 50%;
     background-size: cover;
     overflow: hidden;
-    box-sizing: inherit;
     height: 600px;
     /* border: 1px magenta solid; */
 }
 
 .video-bg {
-    box-sizing: inherit;
+    position: absolute;
     min-height: 100%;
     height: auto;
     width: auto;
     max-width: 100%;
     top: 50%;
     transform: translateY(-50%);
-    position: absolute;
-    background-position: 50%;
-    background-size: cover;
-    -webkit-box-flex: 1;
-    flex: 1;
-    display: inline-block;
-    vertical-align: baseline;
-    object-fit: contain;
     z-index: -1;
     /* border: 1px magenta solid; */
 }
 
-.form-container {
-    box-sizing: inherit;
-    z-index: 100;
-    height: 100%;
-    display: block;
-    /* border: 1px magenta solid; */
-
-}
-
-.fila {
+.flex_container  {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-top: 115px;
-    box-sizing: inherit;
     /* border:  1px green solid; */
-    height: 100%;
+    height: 85%;
 }
 
-.caja_blanca {
-    -webkit-box-flex: 0;
+.formulario {
     flex: 0 0 35%;
+    /*Para mas informacion de flex*/
+    /*http://www.desarrollolibre.net/blog/tema/239/css/las-propiedades-flex-grow-flex-shrink-y-flex-basis#.WfX6kbynG1M*/
     padding: 64px;
     background-color: #fff;
     line-height: 2em;
     /* border:  1px blue solid; */
 }
-.caja_blanca h1{
+.formulario h1{
     color: #352384;
     font-size: 2.5em;
     font-style: bold;
     /* border:  1px blue solid; */
 }
-.caja_blanca p{
+.formulario p{
     color: #352384;
     font-size: 18px;
     font-weight: 100;
     font-kerning: 20px;
     /* border:  1px blue solid; */
 }
-.caja_blanca>div:last-child p{
+.formulario>div:last-child p{
     color: #352384;
     font-size: 12px;
     font-weight: 100;
     /* border:  1px blue solid; */
 }
 
-.caja_blanca form div {
+.formulario form div {
 
     padding: 10px;
     line-height: 2em;
     /* border:  1px blue solid; */
 }
 
-.caja_blanca input {
+.formulario input {
     width: 100%;
     border: none;
     box-shadow: none;
@@ -232,7 +216,7 @@ button {
     display: block;
 }
 
-.fila_texto_cel {
+.flex_texto_cel {
     display: flex;
     /* border: 1px blue solid; */
 }
@@ -247,8 +231,8 @@ button {
     align-self: left;
 }
 .texto_celular>div {
-    
-    flex: 0 0 33.333%;
+    /*para que cada hijo abarque un 33.33% del tamaño del padre*/
+    flex: 33.333%;
     margin-bottom: 2em;
 }
 
@@ -258,9 +242,7 @@ button {
     max-width: 80%;
 }
 
-
-
-
+/*Como se tienen 3 secciones consecutivas parecidas*/
 .celular~section {
     background-color: white;
     margin: 0;
@@ -269,7 +251,7 @@ button {
 }
 
 /* Videos Sections */
-.contenedor {
+.contenedor_video {
     display: flex;
     flex-direction: row;
     /* border: 1px magenta solid; */
@@ -290,6 +272,8 @@ iframe {
     max-width: 100%;
     display: block;
 }
+
+/*Seccion de Pie de pagina*/
 
 footer {
     background-color: #383349;
