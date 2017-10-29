@@ -34,10 +34,11 @@ function changeBack() {
 }
 
 window.onscroll = function changeClass() {
+    var scrollvalue = 100;
     var scrollPosY = window.pageYOffset | document.body.scrollTop;
-    if (scrollPosY > 500) {
+    if (scrollPosY > scrollvalue) {
         change();
-    } else if (scrollPosY <= 500) {
+    } else if (scrollPosY <= scrollvalue) {
         changeBack();
     }
 }
