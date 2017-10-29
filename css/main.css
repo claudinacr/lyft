@@ -28,6 +28,7 @@ header {
     overflow: hidden;
     padding-left: 5em;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu1 a {
@@ -43,26 +44,28 @@ li {
     display: inline-block;
 }
 
-.menu1 .lista1>li {
+.lista1>li {
     list-style: none;
     float: left;
     padding: 2em;
     /*border: 1px blue solid;*/
 }
 
-.menu1 .lista1>li:nth-child(3):hover .menu2 {
+.lista1>li:nth-child(3):hover .menu2 {
     visibility: visible;
     /* Muestra el sub-menu */
     opacity: 1;
     z-index: 1;
     transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s;
-    /* this removes the transition delay 
-    so the menu will be visible while the 
-    other styles transition */
+    transition-delay: transform 0.5s;
 }
 
-.menu1 .lista1>li:nth-child(2) {
+.lista1>li:nth-child(3):hover .menu1 {
+   background-color: white;
+   color:black;
+}
+
+.lista1>li:nth-child(2) {
     margin-left: 35em;
     /* border: 1px magenta solid; */
 }
@@ -82,7 +85,7 @@ li {
     height: 5em;
     left: 0;
     opacity: 0;
-    transform: translateY(-2em); /*aqui se establece el movi hacia abajo del menu*/
+    transform: translateY(-2em); /*aqui se establece el movi hacia arriba del menu*/
     z-index: -1;
     transition: all 0.3s ease-in-out; 
     /*aqui se establece que todas las transiciones
@@ -128,7 +131,7 @@ li {
     width: auto;
     max-width: 100%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-58%);
     z-index: -1;
     /* border: 1px magenta solid; */
 }
@@ -212,8 +215,9 @@ button {
 /* Celular Section */
 
 .celular {
-    background: linear-gradient(#76278F, #2B1E66);
-    display: block;
+    background: linear-gradient(#650E82, #2B1E66);
+    display: block; 
+    /*#76278F*/
 }
 
 .flex_texto_cel {
