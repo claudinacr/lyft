@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A ride whenever you need one - Lyft</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <script src="app.js"></script>
-</head>d
+</head>
 
 <body>
 
@@ -25,44 +26,42 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Drive</a>
+                    <a href="#" class="menubtn">Drive</a>
                 </li>
                 <li>
-                    <a href="#" onmouseover="change()" onmouseout="changeBack()" id="amenu1">Explore</a>
+                    <a href="#" onmouseover="change()" onmouseout="changeBack()" id="amenu1" class="menubtn">Explore</a>
                     <div class="menu2">
                         <ul>
                             <li>
-                                <a href="#">Partnerships</a>
+                                <a href="#" class="menubtn">Partnerships</a>
                             </li>
                             <li>
-                                <a href="#">Business</a>
+                                <a href="#" class="menubtn">Business</a>
                             </li>
                             <li>
-                                <a href="#">Cities</a>
+                                <a href="#" class="menubtn">Cities</a>
                             </li>
                             <li>
-                                <a href="#">Airports</a>
+                                <a href="#" class="menubtn">Airports</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#" class="menubtn"> Help</a>
                 </li>
                 <li>
                     <a href="#">
-                        <span id="login">Log in</span>
+                        <span class="login">Log in</span>
                     </a>
                 </li>
             </ul>
-
-
         </nav>
 
     </header>
 
     <section class="cover">
-        <!-- Video -->
+        <!-- Fondo de Video -->
         <div class="form_and_video">
             <video class="video-bg
             " poster="assets/images/homepage-hero-poster.8ec795d5.jpg" autoplay="" loop="" muted="" data-reactid="74" playsinline=""
@@ -74,31 +73,17 @@
                 <div class="fila">
                     <div class="caja_blanca">
                         <div>
-                            <h1>Turn Miles</h1>
-                            <h1>Into Money</h1>
-                            <p>Sign up to drive with Lyft.</p>
+                            <h1>TURN MILES</h1>
+                            <h1>INTO MONEY</h1>
+                            <p>SIGN UP TO DRIVE WITH LYFT</p>
                         </div>
                         <form action="">
                             <div>
-                                <input type="tel" name="phone" id="phone">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
                             </div>
-                            <div>
-                                <div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <div></div>
-                            </div>
-                            <div>
-                                <button></button>
-                                <button></button>
+                            <div class="phonebuttons">
+                                <button class="btn1">Become a Driver</button>
+                                <button class="btn2">Sign Up to Ride</button>
                             </div>
                         </form>
                         <div>
@@ -116,178 +101,99 @@
 
     </section>
 
-
     <section class="celular">
         <!-- Celular Texto -->
-        <div class="contenedor_texto_celular">
-            <div class="texto_celular">
-
-                <ul>
-                    <li>
-                        <h2>A RIDE IN MINUTES</h2>
-                    </li>
-                    <li>Request a ride and you’ll be on your way in minutes. Request. Ride. Repeat.</li>
-                    <br>
-                    <li>
-                        <h2>SERIOUS ABOUT SAFETY</h2>
-                    </li>
-                    <li>From knowing the color of your driver’s car to our 24/7 Trust & Safety Team, we got you.</li>
-                    <br>
-                    <li>
-                        <h2>HAPPY DRIVERS.</h2>
-                    </li>
-                    <li>
-                        <h2>HAPPY RIDERS.</h2>
-                    </li>
-                    <li>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</li>
-                </ul>
-            </div>
-            <div class="imagen_celular">
-                <img src="assets/images/phone.png">
+        <div class="contenedor">
+            <div class="contenedor_texto_cel">
+                <div class="fila_texto_cel">
+                    <div class="texto_celular">
+                        <div>
+                            <h1>A RIDE IN MINUTES</h1>
+                            <p>Request a ride and you’ll be on your way in minutes. Request. Ride. Repeat.</p>
+                        </div>
+                        <div>
+                            <h1>SERIOUS ABOUT SAFETY</h1>
+                            <p>From knowing the color of your driver’s car to our 24/7 Trust & Safety Team, we got you.</p>
+                        </div>
+                        <div>
+                            <h1>HAPPY DRIVERS. 
+                                HAPPY RIDERS.</h1>
+                            <p>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</p>
+                        </div>
+                    </div>
+                    <div class="imagen_celular">
+                        <img src="assets/images/phone.png">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="learn">
-            <div class="text_learn">
-                <ul>
-                    <li>
-                        <h2>LEARN MORE</h2>
-                    </li>
-                    <li>
-                        <h2>DRIVEN BY YOU FROM DAY ONE</h2>
-                    </li>
-                    <li> You work hard to get where you’re going. We’re here to help you get there.</li>
-                </ul>
-            </div>
-            <div class="imagen_learn">
-                <img src="assets/images/driven_by_you.aab77e8b.png">
-            </div>
-        </div>
+    <section class="amplify">
+        <div class="contenedor">
+            <div class="texto">
+                <div>
+                    <h3>WATCH</h3>
+                    <h1>AMPLIFY YOUR RIDE</h1>
 
-
-    </section>
-
-    <section>
-        <div class="oregon_west">
-            <div class="video_oregon">
-                <iframe width="898" height="501" src="https://www.youtube.com/embed/TbqOldR0kN0" frameborder="0" allowfullscreen></iframe>
+                    <p>Lyft's new emblem, Amp, is the secret to smooth pickups. Lightning up dashboards nationwide, the device
+                        makes it easy for passengers and drivers to find each other.
+                    </p>
+                </div>
             </div>
-            <div class="west">
-                <ul>
-                    <li>
-                        WATCH
-                    </li>
-                    <li>
-                        RIDING WEST
-                    </li>
-                    <li>
-                        Whether you're riding west on the Oregon Trail, or heading out for all-you-can-eat pancakes, It Matters How You Get There.
-                    </li>
-                </ul>
+            <div class="video_a">
+                <iframe width="898" height="501" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
             </div>
+
         </div>
     </section>
 
-    <section>
-        <!-- texto - video -->
-        <div class="round_corazon">
-            <div class="round">
-                <ul>
-                    <li>LEARN MORE</li>
-                    <li>ROUND UP & DONATE</li>
-                    <li>Opt in and we’ll round up each fare to the nearest dollar, then donate the difference to a charitable
-                        cause of your choice.</li>
-                </ul>
-            </div>
-            <div class="corazon">
-                <ul>
+    <section class="june">
 
-                    <li>
-                        <iframe width="898" height="501" src="https://www.youtube.com/embed/U4-94aOpwRw" frameborder="0" allowfullscreen></iframe>
-                    </li>
-                </ul>
-            </div>
+        <div class="contenedor">
 
+            <div class="video_j">
+                <!--  -->
+                <iframe width="898" height="501" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="texto">
+                <div>
+                    <h3>WATCH</h3>
+                    <h1>JUNE</h1>
+                    <p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago
+                        is empowered start sharing the ride - and sharing her life, too.
+                    </p>
+                </div>
+            </div>
         </div>
 
     </section>
 
-    <!-- <section>
-        
-        <div class="product_news">
-            <div class="product">
-                <ul>
-                    <li>
-                        PRODUCT
-                    </li>
-                    <li>
-                        NOW LIVE: SCHEDULED RIDES
-                    </li>
-                    <li>
-                        Now you can schedule Lyft rides up to seven days in advance and relax knowing your ride will be there when you need it. Whether
-                        you’re catching a flight or a show across town, you’ll have one less thing to worry about.
-                    </li>
-                    <li>
-                        Learn More
-                    </li>
-                </ul>
+    <section class="good">
+        <div class="contenedor">
+            <div class="texto">
+                <div>
+                    <h3>WATCH</h3>
+                    <h1>A GOOD THING GOING</h1>
+                    <p>Launching on TV and online, "Ride on the Bright Side" shows how Lyft continues to prioritize happy drivers,
+                        short ETAs, and safety
+                    </p>
+                </div>
             </div>
-            <div class="news">
-                <ul>
-                    <li>
-                        NEWS
-                    </li>
-                    <li>
-                        SIT FOR SOMETHING WITH ROUND UP & DONATE
-                    </li>
-                    <li>
-                        Starting Monday, May 1, we’re excited to harness the Lyft community’s potential with our newest program, Round Up & Donate.
-                        Opt in and we’ll round up each fare to the nearest dollar, then donate the difference to a charitable
-                        cause.
-                    </li>
-                    <li>
-                        Learn More
-                    </li>
-                </ul>
+            <div>
+                <!--  -->
+                <iframe width="898" height="501" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
             </div>
+
         </div>
-
-
-    </section> -->
-
-    <!-- <section>
-       
-
-        <img class="location" src="assets/images/location-pin.2792d80b.svg" width="228" height="343">
-
-        <div class="find_lyft">
-            <div class="lyft">
-                <ul>
-                    <li>
-                        Find Lyft in Your City
-                    </li>
-                    <li>
-                        Find a City
-                    </li>
-                    <li>
-                        See airports we serve
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </section> -->
+    </section>
 
     <footer>
-        <div class="wrapper_pie">
-            <!-- Pie de página -->
-            <div class="pie">
+        <!-- Pie de página -->
+        <div class="footer_top">
+            <div>
 
-                <p>
-                    <a href="#"> LOG IN</a>
-                </p>
+                <h2>LOG IN</h2>
                 <p>
                     <a href="#">Help</a>
                 </p>
@@ -303,11 +209,11 @@
 
             </div>
 
-            <div class="pie">
+            <div>
 
-                <p>
-                    <a href="#">PARNER</a>
-                </p>
+
+                <h2>PARTNER</h2>
+
                 <p>
                     <a href="#">Parnership</a>
                 </p>
@@ -323,11 +229,9 @@
 
             </div>
 
-            <div class="pie">
+            <div>
+                <h2>LEARN</h2>
 
-                <p>
-                    <a href="#">LEARN</a>
-                </p>
                 <p>
                     <a href="#">Safety</a>
                 </p>
@@ -344,21 +248,46 @@
             </div>
 
 
-            <div class="pie">
+            <div>
                 <a href="#">
-                    <img src="assets/images/apple-store.svg" width="180px" height="120px"> </a>
+                    <img src="assets/images/apple-store.svg" > </a>
 
                 <a href="#">
-                    <img src="assets/images/google-play.png" width="180px" height="60px">
+                    <img src="assets/images/google-play-badge.8e87010e.svg" >
                 </a>
 
-
                 <a href="#">
-                    <img src="assets/images/microsoft.png" width="180px" height="60px">
+                    <img src="assets/images/ms-badge.e2dfd8d1.svg" >
                 </a>
 
             </div>
         </div>
+        <div class="footer_mid">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            Copyright © Your Website 2017
+        </div>
+
+
+
     </footer>
 
 

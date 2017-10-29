@@ -4,7 +4,7 @@ function change() {
     /*Para cambiar el color de fondo a blanco cuando el curso*/
     document.getElementById("menu").style.backgroundColor = "white";
 
-    var links = document.getElementsByTagName("a");
+    var links = document.getElementsByClassName("menubtn");
 
     for (var i = 0; i < links.length; i++) {
         if (links[i].href) {
@@ -22,7 +22,7 @@ function changeBack() {
     document.getElementById("logo").src = "assets/images/logo-white.png";
     document.getElementById("menu").style.backgroundColor = "transparent";
 
-    var links = document.getElementsByTagName("a");
+    var links = document.getElementsByClassName("menubtn");
 
     for (var i = 0; i < links.length; i++) {
 
